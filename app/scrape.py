@@ -1,11 +1,13 @@
 import feedparser
+import streamlit as st
 
 
+@st.cache_data
 def fetch_news(rss_url, query,max_results=5):
     # fetching news articles about query from different rss sources
     feed = feedparser.parse(rss_url)
     relavent_articles = []
-
+    query.lower()
     for entry in feed.entries:
         if query.lower() in entry.title.lower() or query.lower() in entry.summary.lower():
             relavent_articles.append({

@@ -10,7 +10,6 @@ rss_feeds = [
     "https://www.wired.com/feed/rss",  # Wired
     "https://www.theverge.com/rss/index.xml",  # The Verge
     "https://lifehacker.com/rss",  # Lifehacker
-    "https://www.propublica.org/feeds/propublica/main",  # ProPublica
     "https://theconversation.com/global/articles.atom",  # The Conversation
     "https://www.smithsonianmag.com/rss/",  # Smithsonian Magazine
     "https://www.theatlantic.com/feed/all/",  # The Atlantic
