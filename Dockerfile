@@ -1,7 +1,12 @@
 
 FROM python:3.11-slim
+# Set environment variables for Hugging Face cache
+ENV TRANSFORMERS_CACHE=/app/.cache
+ENV HF_HOME=/app/.cache
 #set a working directory
 WORKDIR /app
+# Create a writable cache directory
+RUN mkdir -p /app/.cache && chmod -R 777 /app/.cache
 #copy files from container
 COPY . /app
 #install dependencies
