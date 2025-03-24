@@ -10,7 +10,7 @@ pinned: false
 ---
 
 # News Sentiment Analysis and TTS
-
+docker build -t news-sentiment-analysis:v1.0 .
 This Space performs sentiment analysis on news articles and converts the results to speech using TTS (Text-to-Speech).
 
 ## How to Use
