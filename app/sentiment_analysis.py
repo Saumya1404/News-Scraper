@@ -2,7 +2,7 @@ import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from transformers import pipeline
 from keybert import KeyBERT
-
+nltk.download('vader_lexicon')
 kw_model = KeyBERT()
 sia = SentimentIntensityAnalyzer()
 

@@ -7,8 +7,8 @@ ENV HF_HOME=/app/.cache
 WORKDIR /app
 # Create a writable cache directory
 RUN mkdir -p /app/.cache && chmod -R 777 /app/.cache
-# Download NLTK data (VADER lexicon)
-RUN python -c "import nltk; nltk.download('vader_lexicon')"
+
+
 #copy files from container
 COPY . /app
 #install dependencies
