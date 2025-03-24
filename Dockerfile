@@ -1,5 +1,5 @@
 
-FROM python3.11-slim
+FROM python:3.11-slim
 #set a working directory
 WORKDIR /app
 #copy files from container
