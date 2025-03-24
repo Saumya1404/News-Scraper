@@ -3,6 +3,8 @@ FROM python:3.11-slim
 # Set environment variables for Hugging Face cache
 ENV TRANSFORMERS_CACHE=/app/.cache
 ENV HF_HOME=/app/.cache
+# Set NLTK data path
+ENV NLTK_DATA=/app/nltk_data
 #set a working directory
 WORKDIR /app
 # Create a writable cache directory
