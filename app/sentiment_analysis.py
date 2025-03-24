@@ -2,6 +2,12 @@ import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from transformers import pipeline
 from keybert import KeyBERT
+import os
+
+nltk_data_dir = "/app/nltk_data"
+os.makedirs(nltk_data_dir, exist_ok=True)
+os.environ["NLTK_DATA"] = nltk_data_dir
+
 nltk.download('vader_lexicon')
 kw_model = KeyBERT()
 sia = SentimentIntensityAnalyzer()
